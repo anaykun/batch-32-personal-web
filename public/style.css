@@ -1,0 +1,500 @@
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+.navbar {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav-link:hover {
+  color: rgb(0, 58, 0) !important;
+}
+
+.nav-active:visited {
+  color: rgb(0, 58, 0) !important;
+}
+
+.nav-contact:hover {
+  background-color: rgb(0, 58, 0) !important;
+}
+
+.nav-contact {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: green;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+/* container form login */
+
+.form-box {
+  width: 500px;
+  margin: 7% auto;
+  background-color: whitesmoke;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.fa {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.input-box {
+  margin: 20px auto;
+
+  width: 80%;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.input-box input {
+  width: 90%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+}
+
+.eye {
+  position: absolute;
+  cursor: pointer;
+}
+
+#hide1 {
+  display: none;
+}
+
+.login-btn {
+  border: none;
+  display: block;
+  margin: 50px;
+  margin-bottom: 0;
+}
+
+.login-btn:hover {
+  background-color: green !important;
+  transition: 0.5s;
+}
+
+/* CONTAINER CONTACT ME */
+
+.form-contact-me {
+  background-color: rgb(240, 240, 240);
+  padding: 5% 10%;
+}
+
+.contact-input-form {
+  width: 400px;
+  margin: auto;
+}
+
+.contact-input-form div {
+  margin-bottom: 3%;
+}
+
+.contact-input-form div input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 2%;
+  border-style: none;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 4px rgba(1, 1, 1, 0.1);
+  cursor: pointer;
+}
+
+.contact-input-form div label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form-header {
+  text-align: center;
+}
+
+.contact-form-header h1 {
+  font-size: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 10%;
+}
+
+.contact-span {
+  text-transform: uppercase;
+  animation-name: myproject;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#contact-input-subject {
+  width: 100%;
+  font-size: 1rem;
+  padding: 2%;
+  border-style: none;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(1, 1, 1, 0.1);
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.contact-input-message textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border-style: none;
+  box-shadow: 0 2px 4px rgba(1, 1, 1, 0.1);
+  border-radius: 0.5em;
+  font-size: 1rem;
+  padding: 2%;
+  resize: none;
+  cursor: pointer;
+}
+
+.contact-input-submit {
+  text-align: end;
+}
+
+.contact-input-submit button {
+  border-style: none;
+  color: white;
+  background-color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 2% 10%;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contact-input-submit button:hover {
+  background-color: green;
+}
+
+/* 
+CONTAINER FORM PROJECT */
+
+.form-project {
+  margin: auto;
+  width: 350px;
+}
+
+.form-project input {
+  font-size: 1rem;
+  border: none;
+  padding: 2%;
+  border-radius: 0.3em;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.form-project label {
+  cursor: pointer;
+}
+
+.form-project textarea {
+  box-sizing: border-box !important;
+  width: 100%;
+  resize: none;
+  border: none;
+}
+
+/* design blod upload */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px 0 rgba(1, 1, 1, 0.3);
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: 500px;
+  padding: 10px;
+}
+
+.image {
+  width: 100%;
+  height: 50%;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+}
+
+.tulisan {
+  height: 50%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraf {
+  height: 73%;
+}
+
+.paragraf a {
+  margin: 10px 0;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.paragraf h5 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.paragraf p {
+  margin: 5px 0;
+  font-size: 1rem;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.icon {
+  height: 15%;
+  margin-bottom: 20px;
+}
+
+.icon a {
+  margin-right: 10px;
+  height: 100%;
+  align-self: center;
+}
+
+.tombol {
+  display: flex;
+  margin-bottom: 0;
+  padding: 0;
+  gap: 2%;
+  height: 12%;
+}
+
+.tombol a {
+  padding: 0;
+  text-decoration: none;
+  color: white;
+}
+
+.button-edit {
+  width: 50%;
+  border-style: none;
+
+  color: white;
+  border-radius: 10em;
+  text-decoration: none;
+  text-align: center;
+  padding: 2% 5%;
+  background-color: black;
+  cursor: pointer;
+}
+
+.button-delete {
+  width: 50%;
+  border-style: none;
+  background-color: black;
+  color: white;
+  border-radius: 10em;
+  text-align: center;
+}
+
+/* design blog container */
+
+.blog-section {
+  padding: 5% 10%;
+}
+
+.blog-section div {
+  background-color: white;
+}
+
+.blog-section h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.blog-section > div > p {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+.blog-section-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 5%;
+}
+
+.blog-section-left {
+  flex: 60%;
+}
+
+.blog-section-left img {
+  width: 100%;
+}
+
+.blog-section-right {
+  flex: 40%;
+}
+
+.blog-duration p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog-section-duration {
+  height: 50%;
+  margin-bottom: 20%;
+}
+
+.blog-section-tekno {
+  height: 50%;
+}
+
+.blog-section-tekno div {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
+}
+
+.blog-section-tekno div p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* design section home */
+
+.section-home {
+  padding: 5% 10%;
+}
+
+.section-home > div {
+  display: flex;
+  gap: 5%;
+}
+
+.section-home-left {
+  flex: 35%;
+  box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.3);
+  padding: 2%;
+}
+
+.home-left-info {
+  text-align: justify;
+}
+
+.home-left-info table tr th {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.home-left-info table tr td {
+  border: 1px solid black;
+}
+
+.home-left-info table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.section-home-right {
+  flex: 65%;
+  text-align: justify;
+}
+
+.home-right-info > p {
+  margin-bottom: 10%;
+}
+
+.home-right-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4%;
+  margin-bottom: 10%;
+}
+
+.home-right-icon {
+  width: 30%;
+}
+
+.home-right-icon a img {
+  width: 20%;
+}
+
+.contact-span {
+  text-transform: uppercase;
+  animation-name: myproject;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myproject {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: red;
+  }
+}
