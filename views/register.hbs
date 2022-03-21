@@ -44,7 +44,9 @@
               <a class="nav-link me-4 text-danger" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-danger" href="/project-add">Project</a>
+              {{#if isLogin}}
+                <a class="nav-link text-danger" href="/project-add">Project</a>
+              {{/if}}
             </li>
           </ul>
           <form class="d-flex m-0">

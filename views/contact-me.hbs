@@ -42,13 +42,15 @@
               >Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-danger" href="/project-add">Project</a>
+              {{#if isLogin}}
+                <a class="nav-link text-danger" href="/project-add">Project</a>
+              {{/if}}
             </li>
           </ul>
           <form class="d-flex m-0">
             {{#if isLogin}}
               <span
-                class="contact-span align-self-center me-3"
+                class="contact-span align-self-center me-3 fw-bold"
               >{{user.username}}</span>
               <a
                 class="nav-link btn text-danger mx-3"

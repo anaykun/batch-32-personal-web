@@ -218,6 +218,13 @@ CONTAINER FORM PROJECT */
   border: none;
 }
 
+.input-group input[type="file"] {
+  background-image: url(/public/pictures/clip.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50px;
+}
+
 /* design blod upload */
 
 .grid {

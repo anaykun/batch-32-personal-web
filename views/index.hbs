@@ -50,7 +50,7 @@
           <form class="d-flex m-0">
             {{#if isLogin}}
               <span
-                class="contact-span align-self-center me-3"
+                class="contact-span align-self-center me-3 fw-bold"
               >{{user.username}}</span>
               <a
                 class="nav-link btn text-danger mx-3"
@@ -156,7 +156,7 @@
       <h1 class="mb-5" style="text-align: center;">My Project</h1>
       <div class="mb-5">
 
-        {{#if isLogin}}
+        {{!-- {{#if isLogin}}
           <a
             href="/project-add"
             class=""
@@ -165,7 +165,7 @@
            margin-bottom:10em;
            text-decoration:none"
           >Add Post Project</a>
-        {{/if}}
+        {{/if}} --}}
 
       </div>
 
@@ -182,7 +182,9 @@
                 <h5>Durasi :
                   {{this.timeCont}}
                   ||
-                  <span class="contact-span">{{this.author.username}}</span>
+                  <span
+                    class="contact-span fw-bold"
+                  >{{this.author.username}}</span>
                 </h5>
                 <p>
                   {{this.projectdescription}}
