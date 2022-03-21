@@ -13,7 +13,7 @@ db.connect(function (err, _, done) {
 });
 
 const app = express();
-const PORT = 5020;
+const PORT = process.env.PORT || 5020;
 
 let isLogin = false;
 
