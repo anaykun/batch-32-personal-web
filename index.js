@@ -104,7 +104,7 @@ app.get('/blog-detail/:id', function(req, res){
             done();
 
             let data = result.rows[0];
-            const PATH = 'http://localhost:5020/uploads/';
+            const PATH = '/uploads/';
             
 
             data = {
