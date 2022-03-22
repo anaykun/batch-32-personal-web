@@ -6,7 +6,9 @@ const dbPool = new Pool({
   port: 5432,
   user: 'uaoazdcamzjrpl',
   password: 'f6e2df6b7eb980c833d04be0d042430333cba294d82bb820c41d0c8dece47639',
-  // ssl: true
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
 module.exports = dbPool;
