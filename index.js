@@ -56,8 +56,6 @@ app.get('/', function(req, res){
 
             let data = result.rows;
             
-            
-            
             let dataProjects = data.map(function (data){
 
                 let user_id = data.user_id;
@@ -240,7 +238,7 @@ app.post('/project-edit/:id', upload.single('projectuploadimage'), function (req
 
     let data = req.body;
     if (data.projectname == '' || data.projectstartdate == '' || data.projectenddate == ''
-    || data.projectdescription == '' || data.projectuploadimage == '' ) {
+    || data.projectdescription == '' || req.file.filename == '' ) {
         req.flash('error', 'Please insert all field!');
         return res.redirect('/project-edit:id');
       }
